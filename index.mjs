@@ -10,6 +10,8 @@ const execute = async () => {
         const ingredients = Ingredients.load(data);
         // showIngredients(ingredients);
 
+        const cauldron = new Cauldron(ingredients);
+
         const potion1 = cauldron.createPotion("Bear Claws", "Bee");
         showPotion(potion1);
 
