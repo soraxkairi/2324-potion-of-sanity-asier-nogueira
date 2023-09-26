@@ -31,4 +31,3 @@ export default class Ingredient
         return this.effects.some(candidate => effect.name === candidate.name);
     }
 }
-

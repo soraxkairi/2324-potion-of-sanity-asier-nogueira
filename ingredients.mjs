@@ -13,14 +13,15 @@ export default class Ingredients
         return new Ingredients(data.ingredients.map(Ingredient.from));
     }
     
-    find(name){
-        const ingredient = this.ingredient.find(element => element.hasName(name));
-        if(ingredient === undefined)
-        {
+    find(name) {
+        const ingredient = this.ingredients.find(element => element.hasName(name));
+    
+        if (ingredient === undefined) {
             throw new Error(`Unknown ingredient ${name}`);
         }
     
         return ingredient;
     }
 }
+
 
